@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Figtree;
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+    font-weight: 600 800;
+}
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);   
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Figtree;
+    box-sizing: border-box;
+}
+p{
+    font-size: 16px;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Yellow);
+}
+.container{
+    background-color: var(--White);
+    border-radius: 1rem;
+    width: 440px;
+    box-shadow: .5rem .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--Black);
+    padding: 1.5rem;
+}
+.card-image{
+    width: 100%;
+}
+.card-image img{
+    border-radius: .5rem;
+    width: 100%;
+}
+.card-description{
+    padding: 1.2rem 0 0;
+    padding-right: 1rem;
+}
+.card-description h3{
+    background-color: var(--Yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem;
+    width: 90px;
+    height: 30px;
+    font-weight: 800;
+    font-size: 16px;
+}
+.card-description p{
+    padding: 1rem 0;
+    font-weight: 600;
+}
+.card-description h1{
+    font-weight: 800;
+    font-size: 28px;
+}
+.card-description-text{
+    color: var(--Grey);
+    font-size: 18px;
+    line-height: 1.5;
+}
+.card-profile{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: .6rem;
+    padding-top: .8rem;
+}
+.card-profile img{
+    width: 40px;
+}
+.card-profile h3{
+    font-weight: 800;
+    font-size: 16px;
+}
+.attribution{
+    position: fixed;
+    bottom: .5rem;
+    color: var(--Black);
+    font-size: 16px;
+}
+.attribution a{
+    text-decoration: none;
+    color: var(--Black);
+}
